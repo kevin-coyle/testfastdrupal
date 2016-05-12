@@ -2,3 +2,4 @@ app/*
 !app/html/
 app/html/*
 !app/html/modules/
+!app/html/themes/
