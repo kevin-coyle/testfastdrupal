@@ -1,0 +1,14 @@
+{
+  "name": "drupal/kevla",
+  "type": "drupal-module",
+  "description": "My Awesome Module",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/kevla",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "http://drupal.org/project/issues/kevla",
+    "source": "http://cgit.drupalcode.org/kevla"
+  },
+  "require": { }
+}

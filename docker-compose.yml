@@ -1,0 +1,19 @@
+version: "2"
+services:
+  drupal:
+    build: .
+    links:
+      - mysql
+    ports:
+      - 80
+    volumes:
+      - ./app/html/modules:/var/www/html/modules
+      - ./app/html/themes:/var/www/html/themes
+      - ./settings/settings.php:/var/www/html/sites/default/settings.php
+  mysql:
+    image: mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=drupal
+      - MYSQL_USER=drupal
+      - MYSQL_PASSWORD=drupal
