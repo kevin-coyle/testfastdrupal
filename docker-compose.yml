@@ -11,6 +11,8 @@ services:
       - ./app/html/themes:/var/www/html/themes
       - ./settings/settings.php:/var/www/html/sites/default/settings.php
       - ./app:/app
+    environment:
+      - environment=local
   mysql:
     image: mysql
     environment:
