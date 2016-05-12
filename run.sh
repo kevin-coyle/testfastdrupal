@@ -1,4 +1,7 @@
 #!/bin/bash
-cp -R /var/www/html /app
+if [[ $environment == "local" ]]; then
+  cp -R /var/www/html /app
+fi
+
 
 apache2-foreground

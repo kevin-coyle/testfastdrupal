@@ -10,6 +10,7 @@ services:
       - ./app/html/modules:/var/www/html/modules
       - ./app/html/themes:/var/www/html/themes
       - ./settings/settings.php:/var/www/html/sites/default/settings.php
+      - ./app:/app
   mysql:
     image: mysql
     environment:
